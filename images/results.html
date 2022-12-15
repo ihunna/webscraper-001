@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #f5f5f5;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .center-div{
+            height: 70vh;
+            width: 80vw;
+            background-color: #F8FBFF;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px 30px;
+            border: 20px solid #fff;
+            box-shadow: rgb(231, 228, 228) 2px 5px 10px 10px;
+            margin: 5% auto;
+        }
+        .center-div h1{
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .center-div form{
+            margin: 10% auto;
+            width: 30%;
+            text-align: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 2px;
+            padding: 20px 10px;
+            box-shadow: rgb(231, 228, 228) 2px 5px 10px 10px;
+        }
+
+        .center-div form > *{
+            margin: 2% auto;
+            display: block;
+            width: 80%;
+            height: 25px;
+            border-radius: 2px;
+        }
+
+        .center-div form input{
+            border: 1px solid #424549 ;
+            padding: 1px 0px 1px 5px;
+        }
+
+        .center-div form >:nth-child(4){
+            background-color: green;
+            border: none;
+            width: 80%;
+            height: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 5%;
+        }
+
+        .center-div ul{
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(4, 50px);
+            margin-top: 50px;
+            padding: 0;
+        }
+        
+
+        @media  screen and (max-width: 600px) {
+            .center-div{
+               width: 60vw;
+            }
+            .center-div h1{
+              font-size: 16px;
+            }
+            .center-div form{
+                width: 95%;
+            }
+            .center-div ul{
+                grid-template-columns: repeat(2, auto);
+            }
+        }
+        @media  screen and (max-width: 340.9px) {
+            .center-div{
+                padding: 20px 20px;
+            }
+            .center-div h1{
+                font-size: 14px;
+            }
+
+        }
+    </style>
+    <div class="center-div">
+
+        <h1>
+           Click on any date to download the corresponding file
+        </h1>
+        <div class="files">
+            <form action="">
+                <h5>
+                    Login to view
+                </h5>
+                <input type="text" name="username" id="username">
+                <input type="text" name="password" id="password">
+                <button type="button" class="submit-btn">
+                    Submit
+                </button>
+            </form>
+            <!-- <ul>
+                <li>
+                    <a href="">2022-08-12</a>
+                </li>
+                <li>
+                    <a href="">2022-08-12</a>
+                </li>
+                <li>
+                    <a href="">2022-08-12</a>
+                </li>
+                <li>
+                    <a href="">2022-08-12</a>
+                </li>
+                <li>
+                    <a href="">2022-08-12</a>
+                </li>
+                <li>
+                    <a href="">2022-08-12</a>
+                </li>
+                <li>
+                    <a href="">2022-08-12</a>
+                </li>
+                <li>
+                    <a href="">2022-08-12</a>
+                </li>
+                
+            </ul> -->
+        </div>
+
+    </div>
+</body>
+</html>
